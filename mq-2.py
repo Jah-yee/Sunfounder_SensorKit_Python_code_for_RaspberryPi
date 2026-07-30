@@ -39,7 +39,7 @@ def loop():
 		else :
 			time.sleep(0.5)					# Else delay printing.
 
-def destory():
+def destroy():
 	GPIO.cleanup()				# Release resource
 
 if __name__ == '__main__':		# Program start from here
@@ -47,4 +47,4 @@ if __name__ == '__main__':		# Program start from here
 	try:
 		loop()
 	except KeyboardInterrupt:  	# When 'Ctrl+C' is pressed, the child program destroy() will be  executed.
-		destory()
+		destroy()
